@@ -1,94 +1,98 @@
 header div.container-fluid{
-      padding: 0px 0px;
-    }
-    .jumbotron, nav, #mainpanelheading, #navnames, footer div.panel div.panel-body{
-      background-color: #CC9900;
+  padding: 0px 0px;
+}
+.jumbotron, nav, #mainpanelheading, footer div.panel div.panel-body{
+  background-color: #808080;
 /*      background: -webkit-linear-gradient(135deg, #1A1A1A, #484848, #1A1A1A); /* For Safari 5.1 to 6.0 */
-      /*background: -o-linear-gradient(135deg, #1A1A1A,  #484848, #1A1A1A); /* For Opera 11.1 to 12.0 */*/
-      /*background: -moz-linear-gradient(135deg, #1A1A1A, #484848, #1A1A1A); /* For Firefox 3.6 to 15 */*/
-      /*background: linear-gradient(135deg, #1A1A1A,  #484848, #1A1A1A); /* Standard syntax (must be last) */*/*/
-      /*padding: 48px 0px 0px 0px;*/
+  /*background: -o-linear-gradient(135deg, #1A1A1A,  #484848, #1A1A1A); /* For Opera 11.1 to 12.0 */*/
+  /*background: -moz-linear-gradient(135deg, #1A1A1A, #484848, #1A1A1A); /* For Firefox 3.6 to 15 */*/
+  /*background: linear-gradient(135deg, #1A1A1A,  #484848, #1A1A1A); /* Standard syntax (must be last) */*/*/
+  /*padding: 48px 0px 0px 0px;*/
 
-    }
-    header div.navbar{
-      margin-bottom: 0px;
+}
+header div.navbar{
+  margin-bottom: 0px;
 
-    }
-    .jumbotron h1, header h3{
-      padding: 0px 30px;
-      color: #FF0000;
-    }
-    body{
-      background-color: #b2faf1;
-    }
+}
+.jumbotron h1, header h3{
+  padding: 0px 30px;
+  color: black;
+}
+body{
+  background-color: #CDCDCD;
+}
 
 
-    h1{
-      text-shadow: -5px 10px 10px gray;
-      color: #B80000;
-    }
-    h2{
-      border-bottom-style: ridge;
-      border-color: #0099FF;
-      border-width: 5px;
-    }
-    h3{
-      margin-top: 0px;
-    }
+h1{
+  text-shadow: -5px 10px 10px black;
+  color: black;
+}
+h2{
+  border-bottom-style: ridge;
+  border-color: black;
+  border-width: 5px;
+}
+h3{
+  margin-top: 0px;
+}
 
-    .navbar{
-      padding-top: 0px;
-    }
+.navbar{
+  padding-top: 0px;
+}
 
-    #fan{
-      text-shadow: -2.5px 5px 3px #660000;
-      font-size: 20px;
-    }
-    #strengths{
-      font-weight: bold;
-      border-style: ridge;
-      padding: 5px;
-    } 
-    #qualities{
-      font-size: 18px;
-      color: #008A2E;
+#fan{
+  text-shadow: -2.5px 5px 3px #660000;
+  font-size: 20px;
+}
+#strengths{
+  font-weight: bold;
+  border-style: ridge;
+  padding: 5px;
+} 
+#qualities{
+  font-size: 18px;
+  color: #008A2E;
 
-    }
-    #subqualities{
-      font-size: 14px;
-      float: right;
-      color:  #005C1F;
-    }
-    #iconlist{
-      list-style-type: none;
-      margin-bottom: 0px;
-    }
-    #icons{
-      float: right;
-      margin: 15px;
-      width: 64px;
-      height: 64px;
-    }
-    div{
-      color: black;
-    }
-    .panel{
-      background-color: #fffce0;
-    }
-    #navnames{
-      font-size: 26px;
-      color: black;
-    }
-    #contactme{
-      float: right;
-      font-size: 30px;
-      color: #999999;
-      margin: 30px 0px 30px 30px;
-    }
-    #downloadme{
-      float: right;
-    }
-    footer div div{
-      background-color: white;
-      text-align: center;
-    }
+}
+#subqualities{
+  font-size: 14px;
+  float: right;
+  color:  #005C1F;
+}
+#iconlist{
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+#icons{
+  float: right;
+  margin: 15px;
+  width: 64px;
+  height: 64px;
+}
+div{
+  color: black;
+}
+
+.panel{
+  background-color: #8D8D8D;
+}
+#navnames{
+  font-size: 26px;
+  color: black;
+}
+li.active a.active{
+  background-color: #8D8D8D;
+}
+#contactme{
+  float: right;
+  font-size: 30px;
+  color: black;
+  margin: 30px 0px 30px 30px;
+}
+#downloadme{
+  float: right;
+}
+footer div div{
+  background-color: white;
+  text-align: center;
+}

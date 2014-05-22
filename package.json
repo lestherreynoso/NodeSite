@@ -1,0 +1,23 @@
+{
+  "name": "lestherreynoso",
+  "version": "0.1.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lestherreynoso/NodeSite.git"
+  },
+  "keywords": [
+    "lesther",
+    "reynoso"
+  ],
+  "author": "Lesther Reynoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lestherreynoso/NodeSite/issues"
+  },
+  "homepage": "https://github.com/lestherreynoso/NodeSite"
+}
