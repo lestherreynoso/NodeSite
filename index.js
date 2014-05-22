@@ -14,5 +14,6 @@ handle[""] = "text/html"
 handle["png"] = "image/png"
 handle["docx"] = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
 handle["pdf"] = "application/pdf"
+handle["xml"] = "applicaiton/xml"
 
 server.start(router.route, handle);
