@@ -12,11 +12,18 @@ $(document).ready(function(){
         	$(this).addClass("active").attr("id","active")
 
         })
-        
+
         $("div.panel-heading > ul.nav > li > a").click(function(){
 
         	$("div.panel-heading > ul.nav > li > a").removeClass("active")
         	$(this).addClass("active")
   		
   		})
+
+  		$("#p1").hover(function(){
+			
+			},
+			function(){
+			  alert("Bye! You now leave p1!");
+			});
 })
