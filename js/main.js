@@ -1,29 +1,20 @@
-$(document).ready(function(){
-        
-        $('.carousel').carousel({
+            $(document).ready(function(){
+                $("h2").fadeIn("slow"); 
+            
+                $('.carousel').carousel({
+                    interval: false  
+                });
 
-          	interval: false
-        
-        })
+                $("div.col-lg-3 > div.panel > div.panel-body > span").click(function(){
+                    $("div.col-lg-3 > div.panel > div.panel-body > span").removeClass("active")
+                    $(this).addClass("active")
+                });
+                $(".jumbotron h1").hover(function(){
+                        $(".jumbotron h1").addClass("shimmer")
+                    }, function(){
+                        $(".jumbotron h1").removeClass("shimmer")
+                      
+                    });
+                $("#sticker").sticky({topSpacing:0});
 
-        $("div.panel-heading > ul.nav > li").click(function(){
-
-        	$("div.panel-heading > ul.nav > li").removeClass("active").attr("id", "")
-        	$(this).addClass("active").attr("id","active")
-
-        })
-
-        $("div.panel-heading > ul.nav > li > a").click(function(){
-
-        	$("div.panel-heading > ul.nav > li > a").removeClass("active")
-        	$(this).addClass("active")
-  		
-  		})
-
-  		$("#p1").hover(function(){
-			
-			},
-			function(){
-			  alert("Bye! You now leave p1!");
-			});
-})
+            })

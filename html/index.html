@@ -1,220 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lesther Reynoso</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <link href="css/main.css" rel="stylesheet">
-    <script src="js/main.js"></script>
-  </head>
-  <body>
-    <header>
-        <div class="jumbotron">
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lesther Reynoso</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/shimmer.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/main.js"></script>
 
-          <h1>Lesther Reynoso</h1>
-          <ul id="iconlist">
-            <li id="icons"><a href="https://www.linkedin.com/pub/lesther-reynoso/90/a26/64a/"><img src="img/InBug-60px-TM.png" alt="LinkedIn"></a></li>
-            <li id="icons"><a href="https://www.github.com/lestherreynoso"><img src="img/GitHub-Mark-64px.png" alt ="Git Hub"></a></li>
-            <li id="icons"><a href="mailto:reynosl@sunyit.edu"><img src="img/googlemail-64.png" alt="Gmail"></a></li>
-            <li id="contactme">Contact me:</li>
-          <h3>Computer Scientist, Computer Engineer</h3>
-          
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class""><a href="/"><em>Lesther Reynoso</em></a></h1> 
+                        <h2>Computer Scientist, Computer Engineer</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="panel">
+                            <div class="panel-header">
+                                Reach Me
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li><strong>Email: </strong>reynosl@sunyit.edu</li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <a href="mailto:reynosl@sunyit.edu" ><img src="img/googlemail-64.png" alt="Gmail" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <a href="https://www.linkedin.com/pub/lesther-reynoso/90/a26/64a/" ><img src="img/InBug-60px-TM.png" alt="LinkedIn" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <a href="https://www.github.com/lestherreynoso" ><img src="img/GitHub-Mark-64px.png" alt ="Git Hub" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </header>
 
-          </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-12" id="sidemenu">
 
-        </div>   
-    </header>
-    <div class="container"> 
-      <div class="panel panel-default">
-        <div class="panel-heading" id="mainpanelheading">
-          <ul class="nav nav-tabs nav-justified">
-            <li data-target="#mycarousel" data-slide-to="0" class="active" id="active"><a href="#aboutme" class="active"><span id="navnames">About Me</span></a></li>
-            <li data-target="#mycarousel" data-slide-to="1"><a href="#resume"><span id="navnames">Resume</span></a></li>
-            <li data-target="#mycarousel" data-slide-to="2"><a href="#portfolio"><span id="navnames">Portfolio</span></a></li>
-            <!-- <li data-target="#mycarousel" data-slide-to="3" id="navnames"><a href="#projects">Projects</a></li> -->
-          </ul>
-        </div>  <!-- end of heading -->
+                    <div class="list-group">
+                        <span data-target="#carousel" data-slide-to="0" class="list-group-item active"><a href="#aboutme">About Me!</a></span>
+                        <span data-target="#carousel" data-slide-to="1" class="list-group-item"><a href="#resume">Resume</a></span>
+                        <span data-target="#carousel" data-slide-to="2" class="list-group-item"><a href="#portfolio">Portfolio</a></span>
+                        <span data-target="#carousel" data-slide-to="3" class="list-group-item"><a href="#contactme">Projects</a></span>
+                        <!-- <span data-target="#carousel" data-slide-to="4" class="list-group-item"><a href="#contactme">Contact Me</a></span> -->
+                    </div>
 
-
-        <div class="panel-body">
-          <div id="mycarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="item active">
-               <h3>What to say about me...</h3>
-               <!-- <em>... that would make me sound <span id="fan">FANTASTIC!</span></em><br><br> -->
-                <p>
-                I am currently pursuing a bachelors degree in Computer Science and Computer Engineering with a Math minor. I will 
-                be entering my fifth year this August in which i expect to gradute the following May. <br><br>
-
-                I have an interest in game design and after taking a course in web game programming and developing this website i have
-                also gained an interest web development as well.<br><br>
-
-                I also work with hardware components building and programming a small rc robot using a rasperry pi as the controller. I 
-                code a lot in python to communicate with each of the individual components on the robot. <br><br>
-
-                I learned a lot more than i knew about HTML, CSS, JavaScript, and JQuery very quickly in making this website which i think is cool.
-                </p>
-
-                <!-- 
-                  <h2>Strengths</h2>
-
-                    <p id="strengths"><span id="qualities">Integrity</span><span id="subqualities">Ye shall not break me</span><br></p>
-                     
-                      <p id="descriptions">
-                        I am pretty good with doing what i say im going to do. If i make a commitment to someone to get 
-                        something done i will get it done. Something pretty bad has to happen for me to fail in that. I am dedicated to seeing
-                        challenges i accept lead to successful outcomes. I always try my best with all my committments. 
-                      </p>
-
-                    <p id="strengths"><span id="qualities">Detail-oriented</span><span id="subqualities">No detail can hide from me</span><br></p>
-                      
-                      <p id="descriptions">
-                        I pay a lot of mind to small details when it is necessary. I've learned through my time as chair of my campus' student association
-                        policy committee that the smallest of details can have a huge impact on overall outcome. In my coding experience as well that fact 
-                        continues to and definitely will prove true when theres a misplaced semi-colon or bracket in the code or the reassignment of an 
-                        important variable.
-                      </p>
-
-                    <p id="strengths"><span id="qualities">Ambitious</span><span id="subqualities">"Reach for the sky" -Sheriff Woody</span><br></p>
-                      
-                      <p id="descriptions">
-                        Challenges always appeal to me. If I feel I can tackle on another project, task, or class, I go right ahead. Being ambitious has
-                        led me to pursue a second major and a minor all while working 10 to 20 hours a week around classes and volunteering my time to my student 
-                        government. From that I've developed great work relationships, gained a lot of valueable leadership experience and knowledge as well
-                        as recieve a few certifications and awards, and I will be graduating in May of 2015 with two bachelor degrees and a minor.
-                      </p>
-
-                    <p id="strengths"><span id="qualities">Manager of Time</span><span id="subqualities">Yeah.. I show time who's boss</span><br></p>
-                      
-                      <p id="descriptions">
-                        Being ambitious and accepting new challenges has led me to become very well and organizing myself and managing my time appropiately.
-                        This past semester I successfully managed 6 classes, 2 jobs, participating in 3 committees, and chairing a committee on a weekly basis. 
-                        I can say that the experience reinforced my organizational and time managing skills. 
-                      </p>
-
-                    <p id="strengths"><span id="qualities">Team Player</span><span id="subqualities">We can do this guys!</span><br></p>
-                      
-                      <p id="descriptions">
-                        Over the course of my education i have worked with others often, each time a new and enriching experience. I have led two groups 
-                        in a couple of computer science courses, Software Engineering and Operating Systems and Networking. In my computer engineering 
-                        background, I've worked with many partners and groups for our labs or projects. Participating in committees also adds to my 
-                        experience either leading or participating with others. With each experience i learned that i enjoy working with others and seeing 
-                        each individual contribution come together in a successful final result. Teams also help me learn new things about the limits of what
-                        i can acomplish.
-                      </p>   
-
-                  <h2>Weaknesses</h2>
-
-                    <p id="weaknesses"><span id="qualities">Ambitious</span><span id="subqualities">"This isn't flying, this is falling with style!" -Buzz Lightyear</span><br></p>
                 </div>
 
-               -->
-              </div> <!-- end of item 1 -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            
+                            <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
 
+                                    <div class="item active">
+                                        <img src="img/myface.png" alt="myface" class=" img-responsive img-rounded pull-left">
+                                        <h3>What to say about this guy...</h3>
+                                        <p>
+                                        I always had an interest in most computer related things growing up. I've always been interested in knowing 
+                                        how everything worked from why the parts in the computer made noise and how the applications I use so often were made.
+                                        Because of that I began studying computer science, learning the concepts of programming howeverIstill had an interest in the 
+                                        hardware aspect of computer technology. 
+                                        </p>
+                                        <p>
+                                        At the timeIcouldn't decide which field I had most interest in and I had to make a decision. I decided on tackling them both. 
+                                        Along the way I learnedIhave a huge interest in learning new things. I gained interests in game design, game development, 
+                                        web development, hardware interfacing (currently with a Raspberry Pi and Arduino board) and robotics. With each of these 
+                                        interests I find myself taking time to learn more about them whenIcan.
+                                        </p> 
+                                        <p>
+                                        Currently I am interesting in finding a position whereIcan apply and learn more about the software development process. 
+                                        I've been learning about front-end web development and begun investigating on the back-end using Nodejs, as well as rebuilding 
+                                        a raspberry pi controlled robot written mostly in Python. I hope to find a position that would teach me more about software 
+                                        development or hardware interfacing.
+                                        </p>
+                                    </div> 
+                                    <!-- End of item 1 -->
 
-              <div class="item">
-                
-                <div id="downloadme">
-                  <!-- <span>Downloadable Version: </span> -->
-                  <a href="files/LestherReynosoResume.pdf" id="icons"><img src="img/pdficon_large.png" alt="PDF" height="50" width="50"></a>
-                  <a href="files/LestherReynosoResume.docx" id="icons"><img src="img/docx.png" alt="DOCX"height="50" width="50"></a>
-                   
+                                    <div class="item">
+                                        <div id="download">
+                                            Download Me:
+                                            <a href="files/LestherReynosoResume.pdf"><img src="img/pdficon_large.png" alt="PDF" height="10%" width="10%"></a>
+                                            <a href="files/LestherReynosoResume.docx"><img src="img/docx.png" alt="DOCX" height="10%" width="10%"></a>
+                                        </div>
 
-                </div><br><br>
-                <h2>Objective</h2>
-                <p>
-                  I am looking to utilize my programming and engineering background in an 
-                  environment in which I can both contribute to team and organization success 
-                  and gain knowledge and experience to further develop my skills.
-                </p>
-                <h2>Skills and Strengths</h2>
-                <div style="text-indent:5%">
-                Intuitive and fast paced learning ability, well established communication skills, 
-                confident working in teams, detail-oriented. Experienced with Microsoft Office, Windows 7, 
-                Windows 8, Linux, Assembly, C, C++, Java, JavaScript, Python, SQL, HTML5, CSS, and MATLAB
+                                        <div>
+                                            <h2>Objective</h2>
+                                            <p>
+                                              I am looking to utilize my programming and engineering background in an 
+                                              environment in which I can both contribute to team and organization success 
+                                              and gain knowledge and experience to further develop my skills.
+                                            </p>
+                                            <h2>Skills and Strengths</h2>
+                                            <div class="row" id="skills">
+                                                <div class="col-lg-3">
+                                                    <strong>Skills and talents:</strong>
+                                                    <ul>
+                                                        <li>Intuitive and fast paced learning ability</li>
+                                                        <li>Well established communication skills</li>
+                                                        <li>Confident working in teams</li>
+                                                        <li>Detail-oriented</li>
+                                                        <li>Fluent in Spanish</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <strong>Software Experience:</strong>
+                                                    <ul>
+                                                        <li>Microsoft Office</li>
+                                                        <li>Google Docs</li>
+                                                        <li>Windows 7</li>
+                                                        <li>Windows 8</li>
+                                                        <li>Ubuntu</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">                                
+                                                    <strong>Programming Experienced:</strong>
+                                                    <ul>
+                                                        <li>Python</li>
+                                                        <li>HTML</li>
+                                                        <li>JavaScript</li>
+                                                        <li>CSS</li>
+                                                        <li>C++</li>
+                                                        <li>Assembly</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <strong>Programming Familiarity:</strong>
+                                                    <ul>
+                                                        <li>MATLAB</li>
+                                                        <li>Java</li>
+                                                        <li>Prolog</li>
+                                                        <li>R</li>
+                                                        <li>PHP</li>
+                                                        <li>SQL</li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            
+                                            <h2>Education</h2>
+                                            <strong>SUNY Institute of Technology</strong>, Utica, NY<br>
+                                              <span style="float:right">May 2015</span>
+                                              Bachelor of Science, Computer Science<br>
+                                              Bachelor of Science, Computer Engineering<br>
+                                              Minor in Mathematics
+                                            
+                                            <h2>Work Experience</h2>
+                                            <p><strong>SUNY Institute of Technology Information Technology Help Desk</strong>, Utica, NY<br>
+                                              <em>Help Desk Technician (1/14 - Present)</em><br>
+                                              <div>
+                                                Developed and maintained professional relationships among students, faculty, and staff, 
+                                                educating them on the general use of on campus or personal technology and performed 
+                                                troubleshooting on and resolved technical issues they faced.
+                                              </div>
+                                            </p>
+                                            
+                                            <p><strong>SUNY Institute of Technology Cayan Library</strong>, Utica, NY<br>
+                                              <em>Library Assistant (8/10 - Present)</em><br>
+                                              <div>
+                                                Managed the organization and distribution of resources for all customers in 
+                                                a professional and timely manner and located relevant information that met the 
+                                                customers’ needs.
+                                              </div>
+
+                                            </p>
+                                            <p><strong>A.C.T. Programs at the Cathedral of St. John</strong>, New York, NY<br>
+                                              <em>Assistant to Director (6/11 - 8/13, Seasonal)</em><br>
+                                              <div>
+                                                Reliably established a safe and effective environment for all staff utilize 
+                                                in programs, provided clear and visible notification of equipment and locations, 
+                                                and arranged and ensured functionality of all audio-visual equipment. 
+                                              </div>
+
+                                            </p>
+                                            <h2>Leadership Experience</h2>
+                                            <p>
+                                              <em>Student Association Senator (9/12 - Present)</em><br>
+                                              <div>
+                                                Chaired the Policy Committee in which we revised and improved all governing 
+                                                documents of the Student Associations and all student run organizations.
+                                              </div>
+                                              <div>
+                                                Chaired the Technology Committee in which we bridged communications between 
+                                                students and faculty in regards to technological changes on campus.
+                                              </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- End of Item 2 -->
+                                    <div class="item">
+                                        <h2>Here are some examples of some code I have conquered:</h2>
+                                        <script src="http://gist-it.appspot.com/github/lestherreynoso/SUNYIT-CS-240/blob/master/Lesther_Reynoso_GHP_7.cpp?slice=25:43"></script>
+                                        <script src="http://gist-it.appspot.com/github/lestherreynoso/SUNYIT-CS-490/blob/master/Hwk4/js/planarity.js?slice=146:157"></script>
+                                        <script src="http://gist-it.appspot.com/github/lestherreynoso/SUNYIT-CS-495/blob/master/ReynosoHwk4.py?slice=61:86"></script>
+                                    </div>
+                                    <!-- End of Item 3 -->
+
+                                    <div class="item">
+                                        <h2>What I'm Currently Working on!!</h2>
+                                        <p>
+                                        My Degrees!
+                                        <br>
+                                        I am currently pursuing a bachelors degree in Computer Science and Computer Engineering with a Math minor. I will 
+                                        be entering my fifth year this August in whichIexpect to gradute the following May.
+                                        <br><br>
+                                        Here are some projects im currently working on. I'm working on all of them simultaneously and they're each progressing at their own pace.
+                                        </p>
+                                        <div class="panel-group" id="accordion">
+
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                            This Website!
+                                                        </a>
+                                                    </h4>
+                                                </div>
+
+                                                <div id="collapseOne" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <p>
+                                                            This website has been one interesting and seemingly never ending project. Mostly my fault as I've been learning 
+                                                            a lot rather quickly and keep getting excited when I find something new and just want to implement it. With this
+                                                            site I had to learn how to use HTML, CSS, and JQuery in unison. Before this I was not really experienced with any
+                                                            of those languages but I feel I have a good grasps on the basics. 
+                                                            <br><br>
+                                                            There's moreIwish to do with this website so for me this will probably be a never ending project. For now on my 
+                                                            to-do list is the following:
+                                                            <ul>
+                                                                <li>Make the webpage responsive</li>
+                                                                <li>Add a email form directly from the site (need to learn how to write a PHP script for that one)</li>
+                                                                <li>Make colors work</li>
+                                                                <li>Expand upon my projects in a different page</li>
+                                                            </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                            Raspberry Pi Robot
+                                                        </a>
+                                                    </h4>
+                                                </div>
+
+                                                <div id="collapseTwo" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <p>
+                                                            I chose to rebuild a robot that me and my friends built together of the course of this past semster as a junior
+                                                            design project. We called it the RES Bot, Robots for Emergency Situations. The Purpose of RES 1.0 was to take some
+                                                            readings of its environment and report it back to the user via a web gui accessible from any browser. This bot 
+                                                            would detect distance, temperature, light, and motion. 
+                                                            <br><br>
+                                                            RES 2.0 will include most of that. The goal is to have automatic movement in addition to manual control which 
+                                                            is what it had in the last version. Local area mapping is also a goal this time around. Possibly camera imaging 
+                                                            but that one is a maybe.   
+                                                        </p>
+                                                    </div>  
+                                                </div>
+                                            </div>
+
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                            Portfolio on Github
+                                                        </a>
+                                                    </h4>
+                                                </div>
+
+                                                <div id="collapseThree" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <p>
+                                                            I only recently learned it would be in my best interest to have a portfolio online with all my coding works on there. 
+                                                            It's because of thatIhave only been able to load allIcould find from my courses. Also of course this website 
+                                                            and anythingIhappen to learn and play with like node. 
+                                                            <br><br>
+                                                            I wish to improve that portfolio by including a series of self challenges. These challenges are probably going to be 
+                                                            example problems or tasksIfind from the internet or textbooks thatIcan tackle using a specific language. The end goal 
+                                                            here is to improve my language proficiency starting with low level basic tasks and working my way up with each language. 
+                                                            I plan to start with some of the languages im familiar:
+                                                            <ul>
+                                                                <li>C</li>
+                                                                <li>C++</li>
+                                                                <li>Java</li>
+                                                                <li>JavaScript</li>
+                                                                <li>Python</li>
+                                                            </ul>                                                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                            NodeJs Fun
+                                                        </a>
+                                                    </h4>
+                                                </div>
+
+                                                <div id="collapseFour" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <p>
+                                                            For this oneIrecently started working with. I was trying to get started with an app and this seemed like a good 
+                                                            way to go. I read a beginner book that got me started andIwas able to successfully able to write the server, router, 
+                                                            and handler whichIwas really excited about. I got my website to work with the Node serverIwrote and that excited me more. 
+                                                            <br><br>
+                                                            I plan to investigate futher into Node and see whatIcan do with it. For nowIhave the basics workingIjust have to
+                                                            clean it up and I'll be good to continue forward understanding express. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                          </div>
+                                    </div>
+                                    <!-- End of Item 4 -->
+<!--
+                                    <div class="item">
+                                        <h2>Ways to reach me!</h2>
+                                        One of these ways
+                                        <ul>
+                                          <li><a href="https://www.linkedin.com/pub/lesther-reynoso/90/a26/64a/"><img class="img-responsive" src="img/Logo-59px-TM.png" alt="LinkedIn"></a></li>
+                                          <li><a href="https://www.github.com/lestherreynoso"><img class="img-responsive" src="img/GitHub_Logo.png" alt ="Git Hub"></a></li>
+                                          <li><a href="mailto:reynosl@sunyit.edu"><img class="img-responsive" src="img/Gmail_logo.png" alt="Gmail"></a></li>
+                                        </ul>
+
+                                        <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
+                                            simple collapsible
+                                        </button>
+
+                                        <div id="demo" class="collapse pull-right">
+                                            <form action="MAILTO:reynosl@sunyit.edu" method="post" enctype="text/plain">
+                                                Name:<br>
+                                                <input type="text" name="name" value="your name"><br>
+                                                E-mail:<br>
+                                                <input type="text" name="mail" value="your email"><br>
+                                                Comment:<br>
+                                                <input type="text" name="comment" value="your comment" size="50"><br><br>
+                                                <input type="submit" value="Send">
+                                                <input type="reset" value="Reset">
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- End of Item 5
+                                     -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <h2>Education</h2>
-                <strong>SUNY Institute of Technology</strong>, Utica, NY<br>
-                  <div style="float:right">May 2015</div>
-                  Bachelor of Science, Computer Science<br>
-                  Bachelor of Science, Computer Engineering<br>
-                  Minor in Mathematics
-                
-                <h2>Work Experience</h2>
-                <p><strong>SUNY Institute of Technology Information Technology Help Desk</strong>, Utica, NY<br>
-                  <em>Help Desk Technician (1/14 - Present)</em><br>
-                  <div style="text-indent:5%">
-                    Developed and maintained professional relationships among students, faculty, and staff, 
-                    educating them on the general use of on campus or personal technology and performed 
-                    troubleshooting on and resolved technical issues they faced.
-                  </div>
-                </p>
-                
-                <p><strong>SUNY Institute of Technology Cayan Library</strong>, Utica, NY<br>
-                  <em>Library Assistant (8/10 - Present)</em><br>
-                  <div style="text-indent:5%">
-                    Managed the organization and distribution of resources for all customers in 
-                    a professional and timely manner and located relevant information that met the 
-                    customers’ needs.
-                  </div>
-
-                </p>
-                <p><strong>A.C.T. Programs at the Cathedral of St. John</strong>, New York, NY<br>
-                  <em>Assistant to Director (6/11 - 8/13, Seasonal)</em><br>
-                  <div style="text-indent:5%">
-                    Reliably established a safe and effective environment for all staff utilize 
-                    in programs, provided clear and visible notification of equipment and locations, 
-                    and arranged and ensured functionality of all audio-visual equipment. 
-                  </div>
-
-                </p>
-                <h2>Leadership Experience</h2>
-                <p>
-                  <em>Student Association Senator (9/12 - Present)</em><br>
-                  <div style="text-indent:5%">
-                    Chaired the Policy Committee in which we revised and improved all governing 
-                    documents of the Student Associations and all student run organizations.
-                  </div>
-                  <div style="text-indent:5%">
-                    Chaired the Technology Committee in which we bridged communications between 
-                    students and faculty in regards to technological changes on campus.
-                  </div>
-                </p>
-              </div>  <!-- end of item 2 -->
-
-              <div class="item">
-               <h2>Here are some examples of some programs i found challenging:</h2>
-               
-                  <script src="http://gist-it.appspot.com/github/lestherreynoso/SUNYIT-CS-240/blob/master/Lesther_Reynoso_GHP_7.cpp?slice=25:43"></script>
-                  <script src="http://gist-it.appspot.com/github/lestherreynoso/SUNYIT-CS-490/blob/master/Hwk4/js/planarity.js?slice=146:157"></script>
-                  <script src="http://gist-it.appspot.com/github/lestherreynoso/SUNYIT-CS-495/blob/master/ReynosoHwk4.py?slice=61:86"></script>
-                
-              </div> <!-- end of item 3 -->
-
-
-<!--               <div class="item">
-                <h2>This is where my projects will go once i start some :D</h2>
-              </div>  <!-- end of time 4 -->
-             
-            </div> <!-- carousel-inner -->
-          </div>    <!-- carousel -->
-        </div> <!-- panel-body -->
-      </div>  <!-- panel -->
-    </div> <!-- container -->
-    <footer>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          Copyright 2014 &copy Lesther H. Reynoso
+            </div>
         </div>
-      </div>
-    </footer>
-  </body>
+        <footer>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Copyright 2014 &copy Lesther H. Reynoso
+                    <span style="float:right"><a href="html/ver1.html">VER. 1</a></span>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

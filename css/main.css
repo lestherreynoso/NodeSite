@@ -1,99 +1,125 @@
-header div.container-fluid{
-  padding: 0px 0px;
-}
-.jumbotron, nav, #mainpanelheading, footer div.panel div.panel-body{
-  background-color: #808080;
-/*      background: -webkit-linear-gradient(135deg, #1A1A1A, #484848, #1A1A1A); /* For Safari 5.1 to 6.0 */
-  /*background: -o-linear-gradient(135deg, #1A1A1A,  #484848, #1A1A1A); /* For Opera 11.1 to 12.0 */*/
-  /*background: -moz-linear-gradient(135deg, #1A1A1A, #484848, #1A1A1A); /* For Firefox 3.6 to 15 */*/
-  /*background: linear-gradient(135deg, #1A1A1A,  #484848, #1A1A1A); /* Standard syntax (must be last) */*/*/
-  /*padding: 48px 0px 0px 0px;*/
-
-}
-header div.navbar{
-  margin-bottom: 0px;
-
-}
-.jumbotron h1, header h3{
-  padding: 0px 30px;
-  color: black;
-}
-body{
-  background-color: #CDCDCD;
-}
-
-
-h1{
-  text-shadow: -5px 10px 10px black;
-  color: black;
-}
-h2{
-  border-bottom-style: ridge;
-  border-color: black;
-  border-width: 5px;
-}
-h3{
-  margin-top: 0px;
-  padding:0px;
-}
-
-.navbar{
-  padding-top: 0px;
-}
-
-#fan{
-  text-shadow: -2.5px 5px 3px #660000;
-  font-size: 20px;
-}
-#strengths{
-  font-weight: bold;
-  border-style: ridge;
-  padding: 5px;
-} 
-#qualities{
-  font-size: 18px;
-  color: #008A2E;
-
-}
-#subqualities{
-  font-size: 14px;
-  float: right;
-  color:  #005C1F;
-}
-#iconlist{
-  list-style-type: none;
-  margin-bottom: 0px;
-}
-#icons{
-  float: right;
-  margin: 15px;
-  width: 64px;
-  height: 64px;
-}
-div{
-  color: black;
-}
-
-.panel{
-  background-color: #8D8D8D;
-}
-#navnames{
-  font-size: 26px;
-  color: black;
-}
-li.active a.active{
-  background-color: #8D8D8D;
-}
-#contactme{
-  float: right;
-  font-size: 30px;
-  color: black;
-  margin: 30px 0px 30px 30px;
-}
-#downloadme{
-  float: right;
-}
-footer div div{
-  background-color: white;
-  text-align: center;
-}
+            @font-face{
+                font-family: imagine;
+                src: url(../fonts/imagine_font.ttf);
+            }
+            .jumbotron{
+                background-image: url("../img/escheresque_ste.png");
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                clear:both;
+            }
+            .jumbotron a{
+                color:transparent;
+            }
+            .jumbotron a:hover{
+                color:transparent;
+            }
+            .jumbotron .col-lg-8{
+                margin-top: 0;
+            }
+            .jumbotron h1 a, .jumbotron h1 a:hover{
+                color: grey;
+                text-decoration: none;
+            }
+            .jumbotron h1{
+                margin-top: 0px;
+            }
+            .jumbotron h2{
+                color: grey;
+            }
+            .jumbotron .panel{
+                font-family: imagine;
+                font-size: x-large;
+                float: right;
+                color: grey;
+                text-align: center;
+            }
+            .jumbotron div.panel-header{
+                padding-top: 15px;
+            }
+            .jumbotron div.panel-body{
+                padding-top: 0px;
+            }
+            .img-responsive{
+                margin: auto auto;
+            }
+            #sidemenu{
+                background-image: url("../img/escheresque_ste.png");
+                padding-left: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+            #fullheight{
+                height: 100%;
+            }
+            #sidemenu .list-group{
+                font-family: imagine;
+                font-size: x-large;
+                max-height: 100%
+            }
+/*            .col-md-12 .panel{
+                font-size: large;
+            }*/
+            #sidemenu .list-group span a{
+                -ms-transition: font-size 0.3s; /* IE 9 */
+                -webkit-transition: font-size 0.3s; /* Chrome, Safari, Opera */
+                transition: font-size 0.3s;
+                color: grey;
+            }
+            #sidemenu .list-group span a:hover{
+                font-size: xx-large;
+                text-decoration: none;
+                color: grey;
+            }
+/*            .col-md-12 .panel-body span a:hover{
+                font-size: x-large;
+                text-decoration: none;
+            }*/
+            .col-lg-8{
+                margin-top: 30px;
+            }
+            .col-lg-8 .panel{
+                background-image: url("../img/triangular.png");
+            }
+            body{
+                background-color: ;
+                background-image: url("../img/otis_redding.png")
+            }
+            ul{
+                list-style-type: none;
+            }
+            .list-group-item{
+                background-color: transparent;
+                border-color: transparent;
+            }
+            .list-group-item:hover{
+                color: transparent;
+            }
+            .panel, .panel-body{
+                background-color: transparent;
+                border-color: transparent;
+            }
+            .carousel-inner .item img{
+                padding: 15px;
+            }
+/*            .col-md-12 ul{
+                text-align: center;
+            }
+            .col-md-12 ul li{
+                float: left;
+                margin: 0px 15px;
+            }*/
+            #download{
+                float: right;
+            }
+            #download img{
+                height: 64px;
+                width: 64px;
+            }
+            #skills{
+                text-align: center;
+            }
+            footer{
+                bottom: 0px;
+                text-align: center;
+            }
