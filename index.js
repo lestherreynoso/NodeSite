@@ -16,5 +16,6 @@ handle["docx"] = "application/vnd.openxmlformats-officedocument.wordprocessingml
 handle["pdf"] = "application/pdf"
 handle["xml"] = "applicaiton/xml"
 handle["ico"] = "image/x-icon"
+handle["ttf"] = "application/x-font-ttf"
  
 server.start(router.route, handle);
