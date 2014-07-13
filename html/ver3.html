@@ -6,44 +6,192 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Lesther Reynoso</title>
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/shimmer.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/shimmer.css" rel="stylesheet">
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/jquery.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/main.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.sticky.js"></script>
+        <style>
+            @font-face{
+                font-family: imagine;
+                src: url(../fonts/imagine_font.ttf);
+            }
+            .jumbotron{
+                background-image: url("../img/escheresque_ste.png");
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                clear:both;
+            }
+            .jumbotron a{
+                color:transparent;
+            }
+            .jumbotron a:hover{
+                color:transparent;
+            }
+            .jumbotron .col-lg-8{
+                margin-top: 0;
+            }
+            .jumbotron h1 a, .jumbotron h1 a:hover{
+                color: grey;
+                text-decoration: none;
+            }
+            .jumbotron h1{
+                margin-top: 0px;
+            }
+            .jumbotron h2{
+                color: grey;
+            }
+            .jumbotron .panel{
+                font-family: imagine;
+                font-size: x-large;
+                float: right;
+                color: grey;
+                text-align: center;
+            }
+            .jumbotron div.panel-header{
+                padding-top: 15px;
+            }
+            .jumbotron div.panel-body{
+                padding-top: 0px;
+            }
+            .img-responsive{
+                margin: auto auto;
+            }
+            #sidemenu{
+                background-image: url("../img/escheresque_ste.png");
+                padding-left: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+            #fullheight{
+                height: 100%;
+            }
+            #sidemenu .list-group{
+                font-family: imagine;
+                font-size: x-large;
+                max-height: 100%
+            }
+/*            .col-md-12 .panel{
+                font-size: large;
+            }*/
+            #sidemenu .list-group span a{
+                -ms-transition: font-size 0.3s; /* IE 9 */
+                -webkit-transition: font-size 0.3s; /* Chrome, Safari, Opera */
+                transition: font-size 0.3s;
+                color: grey;
+            }
+            #sidemenu .list-group span a:hover{
+                font-size: xx-large;
+                text-decoration: none;
+                color: grey;
+            }
+/*            .col-md-12 .panel-body span a:hover{
+                font-size: x-large;
+                text-decoration: none;
+            }*/
+            .col-lg-8{
+                margin-top: 30px;
+            }
+            .col-lg-8 .panel{
+                background-image: url("../img/triangular.png");
+            }
+            body{
+                background-color: ;
+                background-image: url("../img/otis_redding.png")
+            }
+            ul{
+                list-style-type: none;
+            }
+            .list-group-item{
+                background-color: transparent;
+                border-color: transparent;
+            }
+            .list-group-item:hover{
+                color: transparent;
+            }
+            .panel, .panel-body{
+                background-color: transparent;
+                border-color: transparent;
+            }
+            .carousel-inner .item img{
+                padding: 15px;
+            }
+/*            .col-md-12 ul{
+                text-align: center;
+            }
+            .col-md-12 ul li{
+                float: left;
+                margin: 0px 15px;
+            }*/
+            #download{
+                float: right;
+            }
+            #download img{
+                height: 64px;
+                width: 64px;
+            }
+            #skills{
+                text-align: center;
+            }
+            footer{
+                bottom: 0px;
+                text-align: center;
+            }
+
+        </style>
+
+        <script>
+            $(document).ready(function(){
+                $("h2").fadeIn("slow"); 
+            
+                $('.carousel').carousel({
+                    interval: false  
+                });
+
+                $("div.col-lg-3 > div.panel > div.panel-body > span").click(function(){
+                    $("div.col-lg-3 > div.panel > div.panel-body > span").removeClass("active")
+                    $(this).addClass("active")
+                });
+                $(".jumbotron h1").hover(function(){
+                        $(".jumbotron h1").addClass("shimmer")
+                    }, function(){
+                        $(".jumbotron h1").removeClass("shimmer")
+                      
+                    });
+
+            })
+        </script>
 
     </head>
     <body>
         <header>
             <div class="jumbotron">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <h1 class""><a href="/"><em>Lesther Reynoso</em></a></h1> 
+                    <div class="col-lg-8 col-md-8">
+                        <h1 class""><a href="index.html"><em>Lesther Reynoso</em></a></h1> 
                         <h2>Computer Scientist, Computer Engineer</h2>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="panel">
                             <div class="panel-header">
                                 Reach Me
                             </div>
                             <div class="panel-body">
                                 <ul>
-                                    <li><strong>Email: </strong>reynosl@sunyit.edu</li>
+                                    <li>lhreynos@gmail.com</li>
                                     <li>
                                         <div class="row">
-                                            <div class="col-lg-4">
-                                                <a href="mailto:reynosl@sunyit.edu" ><img src="img/googlemail-64.png" alt="Gmail" class="img-responsive"></a>
+                                            <div class="col-lg-4 col-md-4">
+                                                <a href="mailto:lhreynos@gmail.com" ><img src="../img/googlemail-64.png" alt="Gmail" class="img-responsive"></a>
                                             </div>
-                                            <div class="col-lg-4">
-                                                <a href="https://www.linkedin.com/pub/lesther-reynoso/90/a26/64a/" ><img src="img/InBug-60px-TM.png" alt="LinkedIn" class="img-responsive"></a>
+                                            <div class="col-lg-4 col-md-4">
+                                                <a href="https://www.linkedin.com/pub/lesther-reynoso/90/a26/64a/" ><img src="../img/InBug-60px-TM.png" alt="LinkedIn" class="img-responsive"></a>
                                             </div>
-                                            <div class="col-lg-4">
-                                                <a href="https://www.github.com/lestherreynoso" ><img src="img/GitHub-Mark-64px.png" alt ="Git Hub" class="img-responsive"></a>
+                                            <div class="col-lg-4 col-md-4">
+                                                <a href="https://www.github.com/lestherreynoso" ><img src="../img/GitHub-Mark-64px.png" alt ="Git Hub" class="img-responsive"></a>
                                             </div>
                                         </div>
                                     </li>
@@ -56,17 +204,20 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-12" id="sidemenu">
+                <div class="col-lg-3 col-md-12 visible-lg" id="sidemenu">
 
                     <div class="list-group">
+
                         <span data-target="#carousel" data-slide-to="0" class="list-group-item active"><a href="#aboutme">About Me!</a></span>
                         <span data-target="#carousel" data-slide-to="1" class="list-group-item"><a href="#resume">Resume</a></span>
                         <span data-target="#carousel" data-slide-to="2" class="list-group-item"><a href="#portfolio">Portfolio</a></span>
-                        <span data-target="#carousel" data-slide-to="3" class="list-group-item"><a href="#contactme">Projects</a></span>
-                        <!-- <span data-target="#carousel" data-slide-to="4" class="list-group-item"><a href="#contactme">Contact Me</a></span> -->
+                        <span data-target="#carousel" data-slide-to="3" class="list-group-item"><a href="#projects">Projects</a></span>
+                        <span data-target="#carousel" data-slide-to="4" class="list-group-item visible-sm"><a href="#contactme">Contact Me</a></span>
                     </div>
 
                 </div>
+
+                <div class="">
 
                 <div class="col-lg-8 col-md-12">
                     <div class="panel panel-default">
@@ -76,7 +227,7 @@
                                 <div class="carousel-inner">
 
                                     <div class="item active">
-                                        <img src="img/myface.png" alt="myface" class=" img-responsive img-rounded pull-left">
+                                        <img src="../img/myface.png" alt="myface" class=" img-responsive img-rounded pull-left">
                                         <h3>What to say about this guy...</h3>
                                         <p>
                                         I always had an interest in most computer related things growing up. I've always been interested in knowing 
@@ -85,10 +236,10 @@
                                         hardware aspect of computer technology. 
                                         </p>
                                         <p>
-                                        At the timeIcouldn't decide which field I had most interest in and I had to make a decision. I decided on tackling them both. 
+                                        At the time I couldn't decide which field I had most interest in and I had to make a decision. I decided on tackling them both. 
                                         Along the way I learned I have a huge interest in learning new things. I gained interests in game design, game development, 
                                         web development, hardware interfacing (currently with a Raspberry Pi and Arduino board) and robotics. With each of these 
-                                        interests I find myself taking time to learn more about them whenIcan.
+                                        interests I find myself taking time to learn more about them when I can.
                                         </p> 
                                         <p>
                                         Currently I am interesting in finding a position where I can apply and learn more about the software development process. 
@@ -102,8 +253,8 @@
                                     <div class="item">
                                         <div id="download">
                                             Download Me:
-                                            <a href="files/LestherReynosoResume.pdf"><img src="img/pdficon_large.png" alt="PDF" height="10%" width="10%"></a>
-                                            <a href="files/LestherReynosoResume.docx"><img src="img/docx.png" alt="DOCX" height="10%" width="10%"></a>
+                                            <a href="files/LestherReynosoResume.pdf"><img src="../img/pdficon_large.png" alt="PDF" height="10%" width="10%"></a>
+                                            <a href="files/LestherReynosoResume.docx"><img src="../img/docx.png" alt="DOCX" height="10%" width="10%"></a>
                                         </div>
 
                                         <div>
@@ -224,9 +375,9 @@
                                         My Degrees!
                                         <br>
                                         I am currently pursuing a bachelors degree in Computer Science and Computer Engineering with a Math minor. I will 
-                                        be entering my fifth year this August in whichIexpect to gradute the following May.
+                                        be entering my fifth year this August in which I expect to gradute the following May.
                                         <br><br>
-                                        Here are some projects I'm currently working on. I'm working on all of them simultaneously and they're each progressing at their own pace.
+                                        Here are some projects im currently working on. I'm working on all of them simultaneously and they're each progressing at their own pace.
                                         </p>
                                         <div class="panel-group" id="accordion">
 
@@ -272,8 +423,8 @@
                                                 <div id="collapseTwo" class="panel-collapse collapse">
                                                     <div class="panel-body">
                                                         <p>
-                                                            I chose to rebuild a robot that my friends and I built together of the course of this past semster as a junior
-                                                            design project. We called it the RES Bot, Robots for Emergency Situations. The purpose of RES 1.0 was to take some
+                                                            I chose to rebuild a robot that me and my friends built together of the course of this past semster as a junior
+                                                            design project. We called it the RES Bot, Robots for Emergency Situations. The Purpose of RES 1.0 was to take some
                                                             readings of its environment and report it back to the user via a web gui accessible from any browser. This bot 
                                                             would detect distance, temperature, light, and motion. 
                                                             <br><br>
@@ -331,7 +482,7 @@
                                                         <p>
                                                             For this one I recently started working with. I was trying to get started with an app and this seemed like a good 
                                                             way to go. I read a beginner book that got me started and I was able to successfully able to write the server, router, 
-                                                            and handler which I was really excited about. I got my website to work with the Node server I wrote and that excited me more. 
+                                                            and handler whichIwas really excited about. I got my website to work with the Node server I wrote and that excited me more. 
                                                             <br><br>
                                                             I plan to investigate futher into Node and see what I can do with it. For now I have the basics working I just have to
                                                             clean it up and I'll be good to continue forward understanding express. 
@@ -343,14 +494,14 @@
                                           </div>
                                     </div>
                                     <!-- End of Item 4 -->
-<!--
-                                    <div class="item">
+
+                                    <div class="item visible-sm">
                                         <h2>Ways to reach me!</h2>
                                         One of these ways
                                         <ul>
                                           <li><a href="https://www.linkedin.com/pub/lesther-reynoso/90/a26/64a/"><img class="img-responsive" src="img/Logo-59px-TM.png" alt="LinkedIn"></a></li>
                                           <li><a href="https://www.github.com/lestherreynoso"><img class="img-responsive" src="img/GitHub_Logo.png" alt ="Git Hub"></a></li>
-                                          <li><a href="mailto:reynosl@sunyit.edu"><img class="img-responsive" src="img/Gmail_logo.png" alt="Gmail"></a></li>
+                                          <li><a href="mailto:lhreynos@gmail.com"><img class="img-responsive" src="img/Gmail_logo.png" alt="Gmail"></a></li>
                                         </ul>
 
                                         <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
@@ -358,7 +509,7 @@
                                         </button>
 
                                         <div id="demo" class="collapse pull-right">
-                                            <form action="MAILTO:reynosl@sunyit.edu" method="post" enctype="text/plain">
+                                            <form action="MAILTO:lhreynos@gmail.com" method="post" enctype="text/plain">
                                                 Name:<br>
                                                 <input type="text" name="name" value="your name"><br>
                                                 E-mail:<br>
@@ -370,8 +521,8 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <!-- End of Item 5
-                                     -->
+                                    <!-- End of Item 5-->
+                    
                                 </div>
                             </div>
 
@@ -384,8 +535,6 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     Copyright 2014 &copy Lesther H. Reynoso
-                    <span style="float:right"><a href="html/ver1.html">VER. 1</a></span>
-                    <span style="float:right"><a href="html/ver3.html">VER. 3</a></span>
                 </div>
             </div>
         </footer>
