@@ -1,125 +1,125 @@
-            @font-face{
-                font-family: imagine;
-                src: url(../fonts/imagine_font.ttf);
-            }
-            .jumbotron{
-                background-image: url("../img/escheresque_ste.png");
-                margin-bottom: 0px;
-                padding-bottom: 0px;
-                clear:both;
-            }
-            .jumbotron a{
-                color:transparent;
-            }
-            .jumbotron a:hover{
-                color:transparent;
-            }
-            .jumbotron .col-lg-8{
-                margin-top: 0;
-            }
-            .jumbotron h1 a, .jumbotron h1 a:hover{
-                color: grey;
-                text-decoration: none;
-            }
-            .jumbotron h1{
-                margin-top: 0px;
-            }
-            .jumbotron h2{
-                color: grey;
-            }
-            .jumbotron .panel{
-                font-family: imagine;
-                font-size: x-large;
-                float: right;
-                color: grey;
-                text-align: center;
-            }
-            .jumbotron div.panel-header{
-                padding-top: 15px;
-            }
-            .jumbotron div.panel-body{
-                padding-top: 0px;
-            }
-            .img-responsive{
-                margin: auto auto;
-            }
-            #sidemenu{
-                background-image: url("../img/escheresque_ste.png");
-                padding-left: 0px;
-                text-align: center;
-                overflow: hidden;
-            }
-            #fullheight{
-                height: 100%;
-            }
-            #sidemenu .list-group{
-                font-family: imagine;
-                font-size: x-large;
-                max-height: 100%
-            }
-/*            .col-md-12 .panel{
-                font-size: large;
-            }*/
-            #sidemenu .list-group span a{
-                -ms-transition: font-size 0.3s; /* IE 9 */
-                -webkit-transition: font-size 0.3s; /* Chrome, Safari, Opera */
-                transition: font-size 0.3s;
-                color: grey;
-            }
-            #sidemenu .list-group span a:hover{
-                font-size: xx-large;
-                text-decoration: none;
-                color: grey;
-            }
-/*            .col-md-12 .panel-body span a:hover{
-                font-size: x-large;
-                text-decoration: none;
-            }*/
-            .col-lg-8{
-                margin-top: 30px;
-            }
-            .col-lg-8 .panel{
-                background-image: url("../img/triangular.png");
-            }
-            body{
-                background-color: ;
-                background-image: url("../img/otis_redding.png")
-            }
-            ul{
-                list-style-type: none;
-            }
-            .list-group-item{
-                background-color: transparent;
-                border-color: transparent;
-            }
-            .list-group-item:hover{
-                color: transparent;
-            }
-            .panel, .panel-body{
-                background-color: transparent;
-                border-color: transparent;
-            }
-            .carousel-inner .item img{
-                padding: 15px;
-            }
-/*            .col-md-12 ul{
-                text-align: center;
-            }
-            .col-md-12 ul li{
-                float: left;
-                margin: 0px 15px;
-            }*/
-            #download{
-                float: right;
-            }
-            #download img{
-                height: 64px;
-                width: 64px;
-            }
-            #skills{
-                text-align: center;
-            }
-            footer{
-                bottom: 0px;
-                text-align: center;
-            }
+@font-face{
+    font-family: imagine;
+    src: url(../fonts/imagine_font.ttf);
+}
+.jumbotron{
+    background-image: url("../img/escheresque_ste.png");
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    clear:both;
+}
+.jumbotron a{
+    color:transparent;
+}
+.jumbotron a:hover{
+    color:transparent;
+}
+.jumbotron .col-lg-8{
+    margin-top: 0;
+}
+.jumbotron h1 a, .jumbotron h1 a:hover{
+    color: grey;
+    text-decoration: none;
+}
+.jumbotron h1{
+    margin-top: 0px;
+}
+.jumbotron h2{
+    color: grey;
+}
+.jumbotron .panel{
+    font-family: imagine;
+    font-size: x-large;
+    float: right;
+    color: grey;
+    text-align: center;
+}
+.jumbotron div.panel-header{
+    padding-top: 15px;
+}
+.jumbotron div.panel-body{
+    padding-top: 0px;
+}
+#navbtn{
+    background: ;
+}
+.img-responsive{
+    margin: auto auto;
+}
+#sidemenu, #topmenu{
+    background-image: url("../img/escheresque_ste.png");
+    padding-left: 0px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+#sidemenu .list-group, #topmenu .list-group{
+    font-family: imagine;
+    font-size: x-large;
+}
+#sidemenu .list-group span a, #topmenu .list-group span a{
+    -ms-transition: font-size 0.3s; /* IE 9 */
+    -webkit-transition: font-size 0.3s; /* Chrome, Safari, Opera */
+    transition: font-size 0.3s;
+    color: grey;
+}
+#sidemenu .list-group span a:hover, #topmenu .list-group span a:hover{
+    font-size: xx-large;
+    text-decoration: none;
+    color: grey;
+}
+#topmenu .list-group-item{
+    float:left;
+}
+#topmenu{
+    margin-left: 0px;
+    margin-top: 15px;
+}
+ul.dropdown-menu{
+    margin-top: 30px;
+}
+.col-lg-8{
+    margin-top: 30px;
+}
+.col-lg-8 .panel{
+    background-image: url("../img/triangular.png");
+}
+body{
+    background-color: ;
+    background-image: url("../img/otis_redding.png")
+}
+ul{
+    list-style-type: none;
+}
+.list-group-item{
+    background-color: transparent;
+    border-color: transparent;
+}
+.list-group-item:hover{
+    color: transparent;
+}
+span.list-group-item > .visible-md{
+    float: left;
+}
+.panel, .panel-body{
+    background-color: transparent;
+    border-color: transparent;
+}
+.carousel-inner .item img{
+    padding: 15px;
+}
+#download{
+    float: right;
+}
+#download img{
+    height: 64px;
+    width: 64px;
+}
+#skills{
+    text-align: center;
+}
+footer{
+    bottom: 0px;
+    text-align: center;
+}

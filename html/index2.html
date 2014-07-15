@@ -7,14 +7,156 @@
         <title>Lesther Reynoso</title>
         <!-- Bootstrap -->
         <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/main.css" rel="stylesheet">
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="../js/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/jquery.sticky.js"></script>
-        <script src="../js/main.js"></script>
+        <style>
+            @font-face{
+                font-family: imagine;
+                src: url(../fonts/imagine_font.ttf);
+            }
+            .jumbotron{
+                background-image: url("../img/escheresque_ste.png");
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                clear:both;
+            }
+            .jumbotron a{
+                color:transparent;
+            }
+            .jumbotron a:hover{
+                color:transparent;
+            }
+            .jumbotron .col-lg-8{
+                margin-top: 0;
+            }
+            .jumbotron h1 a, .jumbotron h1 a:hover{
+                color: grey;
+                text-decoration: none;
+            }
+            .jumbotron h1{
+                margin-top: 0px;
+            }
+            .jumbotron h2{
+                color: grey;
+            }
+            .jumbotron .panel{
+                font-family: imagine;
+                font-size: x-large;
+                float: right;
+                color: grey;
+                text-align: center;
+            }
+            .jumbotron div.panel-header{
+                padding-top: 15px;
+            }
+            .jumbotron div.panel-body{
+                padding-top: 0px;
+            }
+            #navbtn{
+                background: ;
+            }
+            .img-responsive{
+                margin: auto auto;
+            }
+            #sidemenu, #topmenu{
+                background-image: url("../img/escheresque_ste.png");
+                padding-left: 0px;
+                text-align: center;
+                overflow: hidden;
+                margin-top: 30px;
+                margin-left: 15px;
+            }
+            #sidemenu .list-group, #topmenu .list-group{
+                font-family: imagine;
+                font-size: x-large;
+            }
+            #sidemenu .list-group span a, #topmenu .list-group span a{
+                -ms-transition: font-size 0.3s; /* IE 9 */
+                -webkit-transition: font-size 0.3s; /* Chrome, Safari, Opera */
+                transition: font-size 0.3s;
+                color: grey;
+            }
+            #sidemenu .list-group span a:hover, #topmenu .list-group span a:hover{
+                font-size: xx-large;
+                text-decoration: none;
+                color: grey;
+            }
+            #topmenu .list-group-item{
+                float:left;
+            }
+            #topmenu{
+                margin-left: 0px;
+                margin-top: 15px;
+            }
+            ul.dropdown-menu{
+                margin-top: 30px;
+            }
+            .col-lg-8{
+                margin-top: 30px;
+            }
+            .col-lg-8 .panel{
+                background-image: url("../img/triangular.png");
+            }
+            body{
+                background-color: ;
+                background-image: url("../img/otis_redding.png")
+            }
+            ul{
+                list-style-type: none;
+            }
+            .list-group-item{
+                background-color: transparent;
+                border-color: transparent;
+            }
+            .list-group-item:hover{
+                color: transparent;
+            }
+            span.list-group-item > .visible-md{
+                float: left;
+            }
+            .panel, .panel-body{
+                background-color: transparent;
+                border-color: transparent;
+            }
+            .carousel-inner .item img{
+                padding: 15px;
+            }
+            #download{
+                float: right;
+            }
+            #download img{
+                height: 64px;
+                width: 64px;
+            }
+            #skills{
+                text-align: center;
+            }
+            footer{
+                bottom: 0px;
+                text-align: center;
+            }
+
+
+        </style>
+
+        <script>
+            $(document).ready(function(){
+                $("h2").fadeIn("slow"); 
+            
+                $('.carousel').carousel({
+                    interval: false  
+                });
+
+                $("div.col-lg-3 > div.panel > div.panel-body > span").click(function(){
+                    $("div.col-lg-3 > div.panel > div.panel-body > span").removeClass("active")
+                    $(this).addClass("active")
+                });
+            })
+        </script>
 
     </head>
     <body>
@@ -22,7 +164,7 @@
             <div class="jumbotron">
                 <div class="row">
                     <div class="col-lg-8 col-md-8">
-                        <h1 class""><a href="html/index.html"><em>Lesther Reynoso</em></a></h1> 
+                        <h1 class""><a href="index.html"><em>Lesther Reynoso</em></a></h1> 
                         <h2>Computer Scientist, Computer Engineer</h2>
 
                         <div class="dropdown">
@@ -399,9 +541,6 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     Copyright 2014 &copy Lesther H. Reynoso
-                    <span style="float:right"><a href="html/ver1.html">VER. 1 </a></span>
-                    <span style="float:right"><a href="html/ver2.html">VER. 2 </a></span>
-                    <span style="float:right"><a href="html/index.html">VER. 3</a></span>
                 </div>
             </div>
         </footer>
