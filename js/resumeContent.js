@@ -84,3 +84,29 @@ var leadership = {
 
 
 };
+
+var Address = document.getElementById("Address");
+var Objective = document.getElementById("Objective");
+var Skills = document.getElementById("Skills");
+var Education = document.getElementById("Education");
+var WorkExperience = document.getElementById("WorkExperience");
+var Leadership = document.getElementById("Leadership");
+
+Address.innerHTML = address;
+
+for (key in objective){
+	Objective.innerHTML += "<div id='resumeObjective"+key+"'>"+ objective[key] + "</div>";
+}
+
+for (key in skills){
+	if(skills[key] === Object){
+		for (subkey in skills[key]){
+			Skills.innerHTML += "<div id='resume"+ key +"'>" + subkey + '<div>' + skills[key][subkey] + "</div></div>";
+		}
+	}
+	else Skills.innerHTML += "<div id='resumeSkills" + key + "'>"+ objective[key] + "</div>";
+}
+	
+Education.innerHTML =
+WorkExperience.innerHTML = 
+Leadership.innerHTML = 
